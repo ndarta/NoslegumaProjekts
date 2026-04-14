@@ -1,0 +1,57 @@
+body {
+    background: #CFE189;
+    font-family: Arial;
+    text-align: center;
+}
+
+.konteiners {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.atkritumi {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.vienums {
+    font-size: 40px;
+    cursor: grab;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.miskastes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.miskaste {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miskaste[data-veids="plastmasa"] { background: #ffd54f; }
+.miskaste[data-veids="papirs"] { background: #64b5f6; }
+.miskaste[data-veids="stikls"] { background: #81c784; }
+
+.miskaste.virs {
+    border: 3px dashed black;
+}
