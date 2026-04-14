@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Šķirošanas spēle</title>
+    <link rel="stylesheet" href="stils.css">
+</head>
+<body>
+
+<div class="konteiners">
+
+    <h1>Sašķiro atkritumus!</h1>
+    <p>Laiks: <span id="laiks">0</span> s</p>
+
+    <div class="atkritumi">
+        <div class="vienums" draggable="true" data-veids="plastmasa">🥤</div>
+        <div class="vienums" draggable="true" data-veids="papirs">📄</div>
+        <div class="vienums" draggable="true" data-veids="stikls">🍾</div>
+        <div class="vienums" draggable="true" data-veids="plastmasa">🧴</div>
+        <div class="vienums" draggable="true" data-veids="papirs">📦</div>
+        <div class="vienums" draggable="true" data-veids="stikls">🍷</div>
+    </div>
+
+
+    <div class="miskastes">
+        <div class="miskaste" data-veids="plastmasa">🟡 Plastmasa</div>
+        <div class="miskaste" data-veids="papirs">🔵 Papīrs</div>
+        <div class="miskaste" data-veids="stikls">🟢 Stikls</div>
+    </div>
+
+    <h2 id="rezultats"></h2>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
