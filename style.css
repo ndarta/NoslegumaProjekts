@@ -72,6 +72,43 @@ h4 {
     color: white;
 }
 
+body {
+    background-color: #CFE189;
+    font-family: Arial;
+}
+
+/* Centrs */
+.konteiners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Radio */
+.radio-grupa {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Teksts */
+#rezultats {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Klikojamie vārdi */
+.saite {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
 /* Spēle */
 .spele {
     background-color: #8DB600;
@@ -81,8 +118,3 @@ h4 {
 .tests {
     background-color: #3b6ea5;
 }
-    
-    float: right ;
-    margin: left 100px; ;
-}
-
