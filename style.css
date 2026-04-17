@@ -63,6 +63,25 @@ h4 {
 
 .sakuma-bilde {
     width: 30%;
+}
+.saite {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Spēle */
+.spele {
+    background-color: #8DB600;
+}
+
+/* Tests */
+.tests {
+    background-color: #3b6ea5;
+}
+    
     float: right ;
     margin: left 100px; ;
 }
