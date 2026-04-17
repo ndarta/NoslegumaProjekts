@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Tests</title>
+</head>
+<body>
+
+<h1>Tests par atkritumu šķirošanu</h1>
+<div class ="nav" id="navButtons" style="display:none;">
+    <a href="index.html" class="nav-button">Teorija</a>
+    <a href="spele.html" class="nav-button">Spēle</a>
+</div>
+<div class = "container">
+<form id="testins">
+
+    <div>
+        <p>1. Kur jāizmet plastmasas pudele?</p>
+        <input type="radio" name="jaut1" value="1"> Dzeltenajā konteinerā
+        <input type="radio" name="jaut1" value="0"> Parastajos atkritumos
+    </div>
+
+    <div>
+        <p>2. Vai papīru drīkst mest kopā ar stiklu?</p>
+        <input type="radio" name="jaut2" value="1"> Nē
+        <input type="radio" name="jaut2" value="0"> Jā
+    </div>
+
+    <div>
+        <p>3. Vai netīru picas kasti drīkst mest papīra konteinerā?</p>
+        <input type="radio" name="jaut3" value="0"> Jā
+        <input type="radio" name="jaut3" value="1"> Nē
+    </div>
+
+    <div>
+        <p>4. Kur jāizmet stikla burka?</p>
+        <input type="radio" name="jaut4" value="1"> Stikla konteinerā
+        <input type="radio" name="jaut4" value="0"> Plastmasas konteinerā
+    </div>
+
+    <div>
+        <p>5. Vai baterijas drīkst mest sadzīves atkritumos?</p>
+        <input type="radio" name="jaut5" value="1"> Nē
+        <input type="radio" name="jaut5" value="0"> Jā
+    </div>
+
+    <div>
+        <p>6. Vai kartonu var pārstrādāt?</p>
+        <input type="radio" name="jaut6" value="0"> Nē
+        <input type="radio" name="jaut6" value="1"> Jā
+    </div>
+
+    <br>
+    <button type="button" onclick="parbauditatbildes()">Pārbaudīt</button>
+
+</form>
+
+<h2 id="result"></h2>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

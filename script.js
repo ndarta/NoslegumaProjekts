@@ -1,44 +1,30 @@
-let vienumi = document.querySelectorAll(".vienums");
-let miskastes = document.querySelectorAll(".miskaste");
-let rezultats = document.getElementById("rezultats");
+function parbauditatbildes() {
 
-let pareizi = 0;
-let kopskaits = vienumi.length;
+    let pareizasAtbildes = [1, 1, 1, 1, 1, 1];
 
-// ⏱ Laiks
-let laiks = 0;
-let taimeris = setInterval(() => {
-    laiks++;
-    document.getElementById("laiks").textContent = laiks;
-}, 1000);
+    let lietotajaAtbildes = [];
+    let punkti = 0;
 
-// Sāk vilkšanu
-vienumi.forEach(vienums => {
-    vienums.addEventListener("dragstart", vilkšanasSakums);
-});
+    for (let i = 1; i <= 6; i++) {
+        let atbildes = document.getElementsByName("jaut" + i);
+        let izvele = -1;
 
-function vilkšanasSakums(e) {
-    e.dataTransfer.setData("veids", e.target.dataset.veids);
-    e.dataTransfer.setData("id", e.target.innerHTML);
+        for (let atbilde of atbildes) {
+            if (atbilde.checked) {
+                izvele = Number(atbilde.value);
+            }
+        }
+
+        lietotajaAtbildes.push(izvele);
+    }
+
+    for (let i = 0; i < pareizasAtbildes.length; i++) {
+        if (lietotajaAtbildes[i] === pareizasAtbildes[i]) {
+            punkti++;
+        }
+    }
+
+    document.getElementById("result").textContent =
+        "Tavs rezultāts: " + punkti + " no 6";
+    document.getElementById("navButtons").style.display = "flex";
 }
-miskastes.forEach(miskaste => {
-
-    miskaste.addEventListener("dragover", e => e.preventDefault());
-
-    miskaste.addEventListener("drop", function(e) {
-        let veids = e.dataTransfer.getData("veids");
-
-        // atrodam konkrēto elementu
-        let vilktais = Array.from(vienumi).find(v => v.innerHTML === e.dataTransfer.getData("id"));
-
-        if (vilktais && veids === this.dataset.veids) {
-            pareizi++;
-            vilktais.remove();
-        }
-
-        if (pareizi === kopskaits) {
-            clearInterval(taimeris);
-            rezultats.textContent = "🎉 Tu uzvarēji " + laiks + " sekundēs!";
-        }
-    });
-});
