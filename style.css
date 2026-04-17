@@ -22,6 +22,19 @@ body{
    text-align: left;
 }
 
+.p3 {
+    margin-left: 50px;;
+    margin-right: 150px ;
+   text-align: center;
+}
+
+
+.rad {
+   display: flex; 
+   justify-content: center;
+
+}
+
 
 
 h1 {
@@ -53,3 +66,4 @@ h4 {
     float: right ;
     margin: left 100px; ;
 }
+
