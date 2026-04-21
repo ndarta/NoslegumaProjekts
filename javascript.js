@@ -1,12 +1,8 @@
-function radio(izvele) {
-
-    if (izvele === "ja") {
-        document.getElementById("rezultats").innerHTML =
-        'Malacis! Dodies uz <a href="spele.html" class="saite spele">spēli</a>!';
+function radio(){
+    if(document.getElementById("ja").checked) {
+       document.getElementById("vai").innerHTML =  `Vari doties uz Spēli`
+    } else if ( document.getElementById("ne").checked ) {
+       document.getElementById("vai").innerHTML =  `Izlasi vēlreiz teoriju1 un tad vari doties uz spēli`
         
-    } 
-    else if (izvele === "ne") {
-        document.getElementById("rezultats").innerHTML =
-        'Izlasi vēlreiz teoriju un tad dodies uz <a href="index2.html" class="saite tests">testu</a>!';
     }
 }
