@@ -34,9 +34,9 @@ function vilkšanasSakums(e) {
 //             vilktais.remove();
 //         }
 
-        if (pareizi === kopskaits) {
-            clearInterval(taimeris);
-            rezultats.textContent = "🎉 Tu uzvarēji " + laiks + " sekundēs!";
-        }
-    });
-});
+//         if (pareizi === kopskaits) {
+//             clearInterval(taimeris);
+//             rezultats.textContent = "🎉 Tu uzvarēji " + laiks + " sekundēs!";
+//         }
+//     });
+// });
