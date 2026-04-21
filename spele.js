@@ -36,7 +36,7 @@ function vilkšanasSakums(e) {
 
 //         if (pareizi === kopskaits) {
 //             clearInterval(taimeris);
-//             rezultats.textContent = "🎉 Tu uzvarēji " + laiks + " sekundēs!";
+//             rezultats.textContent = "Tu uzvarēji " + laiks + " sekundēs!";
 //         }
 //     });
 // });
