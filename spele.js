@@ -17,7 +17,7 @@ vienumi.forEach(vienums => {
 
 function vilkšanasSakums(e) {
     e.dataTransfer.setData("veids", e.target.dataset.veids);
-    e.dataTransfer.setData("id", e.target.id); // 🔥 labots
+    e.dataTransfer.setData("id", e.target.id);
 }
 
 miskastes.forEach(miskaste => {
@@ -27,7 +27,7 @@ miskastes.forEach(miskaste => {
     miskaste.addEventListener("drop", function(e) {
         let veids = e.dataTransfer.getData("veids");
 
-        let vilktais = document.getElementById(e.dataTransfer.getData("id")); // 🔥 labots
+        let vilktais = document.getElementById(e.dataTransfer.getData("id"));
 
         if (vilktais && veids === this.dataset.veids) {
             pareizi++;
