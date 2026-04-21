@@ -20,23 +20,23 @@ function vilkšanasSakums(e) {
     e.dataTransfer.setData("id", e.target.innerHTML);
 }
 
-// miskastes.forEach(miskaste => {
+miskastes.forEach(miskaste => {
 
-//     miskaste.addEventListener("dragover", e => e.preventDefault());
+    miskaste.addEventListener("dragover", e => e.preventDefault());
 
-//     miskaste.addEventListener("drop", function(e) {
-//         let veids = e.dataTransfer.getData("veids");
+    miskaste.addEventListener("drop", function(e) {
+        let veids = e.dataTransfer.getData("veids");
 
-//         let vilktais = Array.from(vienumi).find(v => v.innerHTML === e.dataTransfer.getData("id"));
+        let vilktais = Array.from(vienumi).find(v => v.innerHTML === e.dataTransfer.getData("id"));
 
-//         if (vilktais && veids === this.dataset.veids) {
-//             pareizi++;
-//             vilktais.remove();
-//         }
+        if (vilktais && veids === this.dataset.veids) {
+            pareizi++;
+            vilktais.remove();
+        }
 
-//         if (pareizi === kopskaits) {
-//             clearInterval(taimeris);
-//             rezultats.textContent = "Tu uzvarēji " + laiks + " sekundēs!";
-//         }
-//     });
-// });
+        if (pareizi === kopskaits) {
+            clearInterval(taimeris);
+            rezultats.textContent = "Tu uzvarēji " + laiks + " sekundēs!";
+        }
+    });
+});
