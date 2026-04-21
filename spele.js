@@ -40,6 +40,3 @@ miskastes.forEach(miskaste => {
         }
     });
 });
-function beigtSpele() {
-    document.getElementById("beigas").style.display = "block";
-}
