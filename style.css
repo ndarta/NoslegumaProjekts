@@ -7,6 +7,8 @@ body{
     width: 90%;
    margin-left: auto;
    margin-right: auto;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2 );
+   border-radius: 15px;
 }
 
 .jautajums {
@@ -16,13 +18,24 @@ body{
    margin-right: auto;
 }
 
+
+
+
+
+
+
+p {
+    font-size: 101%
+}
+
 .p2 {
     margin-left: 50px;;
     margin-right: 150px ;
    text-align: left;
+   font-size: 110%;
 }
 
-.p3 {
+.p3{
     margin-left: 50px;;
     margin-right: 150px ;
    text-align: center;
@@ -30,9 +43,12 @@ body{
 
 
 .rad {
-   display: flex; 
+    display: flex;
    justify-content: center;
-
+   font-size: 150%;
+   flex-direction:column;
+   align-items: center;
+   
 }
 
 
