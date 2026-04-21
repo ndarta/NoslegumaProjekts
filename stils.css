@@ -1,0 +1,147 @@
+body {
+	background: #CFE1B9;
+	font-family: Arial;
+	text-align: center;
+}
+
+.konteiners {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.atkritumi {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 20px;
+	flex-wrap: wrap;
+}
+
+.vienums {
+	font-size: 40px;
+	cursor: grab;
+	padding: 10px;
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+.miskastes {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.miskaste {
+	width: 150px;
+	height: 150px;
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.miskaste[data-veids="plastmasa"] {
+	background: #ffd54f;
+}
+
+.miskaste[data-veids="papirs"] {
+	background: #64b5f6;
+}
+
+.miskaste[data-veids="stikls"] {
+	background: #81c784;
+}
+
+.miskaste.virs {
+	border: 3px dashed black;
+}
+
+body {
+	background-color: #CFE1B9;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	background-color: white;
+	width: 90%;
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	font-family: "Bona Nova SC", serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+form>div {
+	background: #f9f9f9;
+	padding: 15px;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+input[type="radio"] {
+	margin: 6px;
+}
+
+button {
+	grid-column: 1 / -1;
+	justify-self: center;
+
+	margin-top: 20px;
+	padding: 12px 25px;
+	font-size: 18px;
+	background-color: #8DB600;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+#result {
+	grid-column: 1 / -1;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.nav {
+	justify-content: center;
+	gap: 15px;
+	margin-top: 10px;
+	background-color: white;
+	width: 100%;
+	max-width: 100px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
